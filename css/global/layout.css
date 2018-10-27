@@ -43,36 +43,8 @@ input[type="radio"].visually-hidden {
           clip-path: inset(100%);
 }
 
-/* .btn {
-  display: block;
-  width: 100%;
-  padding: 17px 13px 16px;
-  padding-left: 68px;
-  cursor: pointer;
-  text-align: left;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-family: "Akrobatbold", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-} */
-
-.container {
-  min-width: 320px;
-  max-width: 600px;
-  margin: 0 auto;
-  padding-right: 13px;
-  padding-left: 13px;
-}
-
 .reset-list {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-/*  header  */
-
-.header {
-
 }

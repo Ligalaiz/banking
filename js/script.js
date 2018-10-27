@@ -18,14 +18,6 @@ $(".owl-carousel").owlCarousel({
   onChange: itemsCount,
   navText: ['','']
 });
-  function itemCount(event) {
-      var item = event.item.index;
-      $('.current-count').text(item + 1);
-  }
-  function itemsCount(event) {
-      var items = event.item.count;
-      $('.size-count').text(items);
-  }
 
   $( function() {
     $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
