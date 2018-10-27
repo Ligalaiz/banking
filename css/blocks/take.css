@@ -1,0 +1,15 @@
+@import "global/fonts.css";
+@import "global/layout.css";
+@import "global/form.css";
+@import "global/type.css";
+
+@import "blocks/page-header.css";
+@import "blocks/take.css";
+@import "blocks/getting.css";
+@import "blocks/use.css";
+@import "blocks/service.css";
+@import "blocks/types.css";
+@import "blocks/statistics.css";
+@import "blocks/questions.css";
+@import "blocks/form.css";
+@import "blocks/page-footer.css";
