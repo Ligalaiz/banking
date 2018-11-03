@@ -1,0 +1,207 @@
+.statistics
+{
+    min-height: 550px;
+    padding-top: 90px;
+
+    background-image: url('../../img/stat_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.statistics__list
+{
+    display: flex;
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.statistics__item
+{
+    margin-bottom: 50px;
+}
+
+.statistics__item .fa
+{
+    font-size: 46px;
+    line-height: 1;
+
+    display: block;
+
+    margin-bottom: 35px;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.statistics__item b
+{
+    font-family: 'Poppins-SemiBold', 'Arial', sans-serif;
+    font-size: 42px;
+    line-height: 1;
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #fff;
+}
+
+.statistics__item p
+{
+    font-family: 'Poppins-Regular', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+
+    margin-bottom: 0;
+
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #fff;
+}
+
+@media (min-width: 371px)
+{
+    .statistics__item--users,
+    .statistics__item--shopping
+    {
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 401px)
+{
+    .statistics__item--users,
+    .statistics__item--shopping
+    {
+        margin-right: 25px;
+    }
+}
+
+@media (min-width: 416px)
+{
+    .statistics {
+      padding-top: 47px;
+    }
+
+    .statistics__item
+    {
+        margin-bottom: 80px;
+    }
+
+    .statistics__item--users,
+    .statistics__item--shopping
+    {
+        margin-right: 0;
+    }
+
+    .statistics__item .fa
+    {
+        font-size: 50px;
+
+        margin-bottom: 35px;
+    }
+
+    .statistics__item b
+    {
+        font-size: 45px;
+    }
+
+    .statistics__item p
+    {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 478px)
+{
+    .statistics__item p
+    {
+        font-size: 24px;
+    }
+
+    .statistics {
+      padding-top: 47px;
+    }
+}
+
+@media (min-width: 565px)
+{
+    .statistics__item
+    {
+        margin-bottom: 60px;
+    }
+
+    .statistics__item--users,
+    .statistics__item--shopping
+    {
+        margin-right: 15px;
+    }
+
+    .statistics__item .fa
+    {
+        font-size: 56px;
+    }
+
+    .statistics__item b
+    {
+        font-size: 52px;
+    }
+}
+
+@media (min-width: 768px)
+{
+    .statistics__item
+    {
+        margin-bottom: 45px;
+    }
+
+    .statistics__item--users,
+    .statistics__item--shopping
+    {
+        margin-right: 80px;
+    }
+
+    .statistics__item .fa
+    {
+        font-size: 56px;
+
+        margin-bottom: 55px;
+    }
+
+    .statistics__item b
+    {
+        font-size: 52px;
+
+        margin-bottom: 6px;
+    }
+
+    .statistics__item p
+    {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .statistics__list
+    {
+        justify-content: space-between;
+    }
+
+    .statistics
+    {
+        padding-top: 170px;
+    }
+
+    .statistics__item--users,
+    .statistics__item--shopping
+    {
+        margin-right: 0;
+    }
+}

@@ -34,8 +34,8 @@
     font-weight: 300;
     font-style: italic;
 
-    src: url('../../fonts/Raleway-LightItalic.woff2') format('woff2'),
-    url('../../fonts/Raleway-LightItalic.woff') format('woff');
+    src: url('../../fonts/raleway-lightItalic.woff2') format('woff2'),
+    url('../../fonts/raleway-lightItalic.woff') format('woff');
 }
 
 @font-face

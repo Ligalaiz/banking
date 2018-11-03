@@ -10,31 +10,73 @@ $('[data-fancybox]').fancybox({
     }
 });
 
-$(".owl-carousel").owlCarousel({
-  loop: true,
-  nav:true,
-  dots:false,
-  items:4,
-  navText: ['',''],
-  responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            margin:0
-        },
-        780:{
-            items:2,
-            margin:10
-        },
-        992:{
-            items:3,
-        },
-        1170:{
-            items:4,
-            margin:30
+$(document).ready(function(){
+    $(".slide-one").owlCarousel({
+      loop: true,
+      dots:false,
+      navText: ['',''],
+      responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                margin:0
+            },
+            600:{
+                items:2,
+                margin:10
+            },
+            992:{
+                items:3,
+            },
+            1170:{
+                items:4,
+                margin:30
+            },
+            1290:{
+                items:4,
+                nav:true
+            }
         }
-    }
+    });
+
+    $(".slide-two").owlCarousel({
+      loop: true,
+      dots:false,
+      navText: ['',''],
+      responsiveClass:true,
+        responsive:{
+          0:{
+              items:1,
+              margin:0
+          },
+          600:{
+              items:2,
+              margin:10
+          },
+          1170:{
+              items:2,
+              margin: 70
+          },
+          1200:{
+              items:3,
+              margin: 20,
+              nav:true
+          },
+          1476:{
+              items:2,
+              margin: 70,
+              stagePadding: 343,
+              nav:true
+          }
+        }
+    });
 });
+
+
+
+
+
+
 
   $( function() {
     $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );

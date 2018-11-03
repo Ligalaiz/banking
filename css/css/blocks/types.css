@@ -1,0 +1,179 @@
+.types .container
+{
+    max-width: 1920px;
+}
+
+.types
+{
+    margin-bottom: 220px;
+}
+
+.types__promo
+{
+    margin-bottom: 55px;
+}
+
+.types__item
+{
+    border-left: 1px solid #b2b2b2;
+    border-right: 1px solid #b2b2b2;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.types__text,
+.types__promo,
+.types__item p
+{
+    text-align: center;
+}
+
+.types__item h3,
+.types__item b
+{
+    font-family: 'Poppins-SemiBold', 'Arial', sans-serif;
+    font-size: 20px;
+    line-height: 2;
+
+    display: block;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #333333;
+}
+
+.types__item-text
+{
+    max-width: 512px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.types__item b
+{
+    margin-bottom: 35px;
+}
+
+.types__item img
+{
+    margin-bottom: 50px;
+}
+
+.types__features
+{
+    margin-bottom: 35px;
+}
+
+.types__features p
+{
+    font-family: 'Poppins-SemiBold', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    padding: 7px 30px 5px;
+
+    text-align: center;
+    text-transform: capitalize;
+
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.btn__apply-n
+{
+    display: block;
+
+    padding: 10px 0;
+
+    border-radius: 0;
+}
+
+.types .owl-nav {
+  margin-top: 30px;
+  display: block;
+}
+
+.types .owl-next,
+.types .owl-prev
+{
+    position: absolute;
+}
+
+.types .owl-prev {
+    top: 50%;
+    left: 8%;
+
+    transform: translate(0, -50%);
+}
+
+.types .owl-next {
+    top: 49%;
+    right: 8%;
+}
+
+@media (min-width: 673px) {
+  .types__features
+  {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .types__features p
+  {
+    border: 1px solid #e0e0e0;
+    margin-right: -1px;
+  }
+}
+
+@media (min-width: 980px)
+{
+
+  .types .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .types__promo
+  {
+      margin-bottom: 85px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .types__item
+  {
+  max-width: 550px;
+  }
+}
+
+@media (min-width: 1290px) {
+
+  .types .owl-carousel .owl-nav.disabled {
+    display: none;
+  }
+
+  .types
+  {
+      margin-bottom: 250px;
+  }
+}
+
+@media (min-width: 1476px) {
+
+  .types .owl-item
+  {
+      opacity: 0.6;
+  }
+
+  .types .owl-item.active+.owl-item {
+      opacity: 1;
+  }
+
+  .types .owl-carousel .owl-nav.disabled {
+    display: block;
+  }
+}

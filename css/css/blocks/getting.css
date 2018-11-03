@@ -1,7 +1,7 @@
 .getting
 {
     padding-top: 150px;
-    padding-bottom: 202px;
+    padding-bottom: 102px;
 
     text-align: center;
 
@@ -24,7 +24,7 @@
 
 .getting__heading
 {
-    margin-bottom: 90px;
+    margin-bottom: 40px;
 }
 
 .getting__item h3
@@ -112,6 +112,11 @@
 
 @media (min-width: 768px)
 {
+    .getting__heading
+    {
+        margin-bottom: 90px;
+    }
+
     .getting__item--lf,
     .getting__item--rt
     {
@@ -123,6 +128,11 @@
         width: 300px;
 
         order: 3;
+    }
+
+    .getting
+    {
+        padding-bottom: 202px;
     }
 }
 
@@ -138,7 +148,7 @@
     }
 }
 
-@media (min-width: 1200px)
+@media (min-width: 1170px)
 {
     .container
     {

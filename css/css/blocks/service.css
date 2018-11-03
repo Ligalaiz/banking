@@ -2,7 +2,7 @@
 {
     position: relative;
 
-    min-height: 850px;
+    min-height: 750px;
     padding-top: 90px;
 }
 
@@ -14,32 +14,14 @@
 
 .service__text
 {
-    font-family: 'Poppins-Regular', 'Arial', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.75;
-
-    margin-bottom: 0;
-
     text-align: center;
-    text-transform: uppercase;
-
-    color: #808080;
 }
 
-.service__prom
+.service__promo
 {
-    font-family: 'Poppins-SemiBold', 'Arial', sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 1.4;
-
     margin-bottom: 60px;
 
     text-align: center;
-    text-transform: uppercase;
-
-    color: #333;
 }
 
 .service__list
@@ -122,30 +104,57 @@
 @media (min-width: 576px)
 {
     .service__text,
-    .service__prom
+    .service__promo
     {
         margin-left: 0;
     }
 }
 
+@media (min-width: 576px)
+{
+    .service .container
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
 @media (min-width: 980px)
+{
+    .service
+    {
+        padding-top: 120px;
+        min-height: 850px;
+    }
+
+    .service__text,
+    .service__promo
+    {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1170px)
+{
+    .service .container
+    {
+        min-width: 1170px;
+    }
+}
+
+@media (min-width: 1327px)
 {
     .service
     {
         padding-top: 240px;
     }
 
-    .service__text,
-    .service__prom
-    {
-        text-align: left;
-    }
-}
 
-@media (min-width: 1290px)
-{
-    .owl-next,
-    .owl-prev
+    .service .owl-carousel .owl-nav.disabled {
+      display: block;
+    }
+
+    .service .owl-next,
+    .service .owl-prev
     {
         position: absolute;
     }
@@ -158,7 +167,7 @@
         transform: translate(0, -50%);
     }
 
-    .owl-next
+    .service .owl-next
     {
         top: 47%;
         right: -80px;
