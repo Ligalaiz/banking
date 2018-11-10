@@ -1,147 +1,170 @@
-
-html
-{
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 320px;
 }
 
 *,
 *::before,
-*::after
-{
-    -webkit-box-sizing: inherit;
-            box-sizing: inherit;
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
-body
-{
-    font-family: 'Raleway-Regular', 'Arial', sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
+body {
+  margin: 0;
+  overflow-x: hidden;
 
-    margin: 0;
-    padding-bottom: 30px;
-
-    color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Raleway-Regular", "Arial", sans-serif;
+  color: #333333;
 }
 
-input
-{
-    font-family: 'Raleway-Regular', Arial, sans-serif;
+input {
+  font-family: "Raleway-Regular", Arial, sans-serif;
 }
 
-a
-{
-    text-decoration: none;
-
-    color: inherit;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-img
-{
-    max-width: 100%;
-    height: auto;
-}
-
-.heading
-{
-    font-family: 'Poppins-SemiBold', 'Arial', sans-serif;
-    font-size: 30px;
-    line-height: 1.4;
-
-    margin-top: 0;
-
-    color: #333;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type='checkbox'].visually-hidden,
-input[type='radio'].visually-hidden
-{
-    position: absolute;
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
 
-    overflow: hidden;
-    clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
 
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
+  white-space: nowrap;
 
-    white-space: nowrap;
+  border: 0;
 
-    border: 0;
+  clip: rect(0 0 0 0);
+          clip-path: inset(100%);
 
-    -webkit-clip-path: inset(100%);
-            clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
 }
 
-input[type='text'],
-input[type='tel'],
-input[type='email'],
-input[type='email'],
-textarea
-{
-    max-width: 100%;
-    height: 14px;
-    padding: 0 20px;
-    padding-right: 10px;
-
-    border: 1px solid #ccc;
+textarea {
+  height: auto;
 }
 
-textarea
-{
-    height: auto;
+::-webkit-input-placeholder {
+  color: #808080;
 }
 
-::placeholder
-{
-    color: #808080;
+:-ms-input-placeholder {
+  color: #808080;
 }
 
-.btn
-{
-    display: inline-block;
-
-    cursor: pointer;
-    transition: opacity ease .2s;
-    text-align: center;
-    text-decoration: none;
-
-    border: none;
+::-ms-input-placeholder {
+  color: #808080;
 }
 
-.btn__apply
-{
-    text-transform: uppercase;
+::placeholder {
+  color: #808080;
+}
 
-    color: #fff;
-    background-color: #fff;
+.btn {
+  display: inline-block;
+
+  text-align: center;
+  text-decoration: none;
+
+  border: none;
+  cursor: pointer;
+
+  -webkit-transition: opacity ease 0.2s;
+       -o-transition: opacity ease 0.2s;
+          transition: opacity ease 0.2s;
+}
+
+.btn__apply {
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
 }
 
 .btn__apply-n,
-.btn__read,
-.feedback
-{
-    color: #fff;
-    background-color: #0b4bec;
+.btn__read {
+  color: #ffffff;
+
+  background-color: #0b4bec;
 }
 
-.btn:hover
-{
-    background-color: rgba(255, 255, 255, .9);;
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
-.reset-list
-{
-    margin: 0;
-    padding: 0;
+.reset-list {
+  margin: 0;
+  padding: 0;
 
-    list-style: none;
+  list-style: none;
 }
 
-.container
-{
-    width: 100%;
+.text {
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.75;
+  font-family: "Poppins-Regular", "Arial", sans-serif;
+  color: #808080;
+  text-transform: uppercase;
+}
+
+.promo {
+  margin-top: 0;
+
+  font-size: 22px;
+  line-height: 1.4;
+  font-family: "Poppins-SemiBold", "Arial", sans-serif;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+@media(min-width: 768px) {
+  .text {
+    font-size: 20px;
+  }
+
+  .promo {
+    font-size: 22px;
+  }
+}
+
+@media(min-width: 768px) {
+  .promo {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 24px;
+  }
+
+  .promo {
+    font-size: 30px;
+  }
+}
+
+@media(min-width: 1170px) {
+  .container {
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
